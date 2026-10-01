@@ -1,0 +1,37 @@
+{
+ "name": "examples",
+ "version": "2",
+ "description": "One hand-written customer-support case: check in seconds that the tool works with your model. Each relation is scored from one test (min_n 1), so its numbers are a demonstration, not a result; use jevbench-mini (or jevbench-240).",
+ "min_n": 1,
+ "cases": 1,
+ "questions": 7,
+ "domains": {
+  "customer_support": 1
+ },
+ "files": {
+  "cases.jsonl": "5a9995bcb37af1498d31d65220b22053fde51e9b9bdb9e699fa3f48f95550c95",
+  "rewrites.jsonl": "c735f61075e7e5ff10eef7363a4b3ec4a48232b2df9610fb970aac5f994f5207",
+  "tests.jsonl.gz": "a71cdef44aa4997b06e886de94352558cfb463ebb6cbffa03ba876bee9c7b8b2"
+ },
+ "rewrites": {
+  "written_by": "Claude, one rewrite per source, reviewed against the same standard as jevbench-240's audit (2026-10-01); not human-audited",
+  "kinds": [
+   "paraphrase",
+   "negation",
+   "description",
+   "translate:zh"
+  ]
+ },
+ "plan": {
+  "file": "tests.jsonl.gz",
+  "selection": "each relation tested once per case, one variant per test",
+  "trials": 50,
+  "tests": 50,
+  "relations": 50,
+  "seed": 0,
+  "trials_per_target": 1,
+  "chosen_from_trials": 267,
+  "requests": 43
+ },
+ "built_with": "jevbench 0.1.0"
+}

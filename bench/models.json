@@ -1,0 +1,213 @@
+{
+ "_doc": "Facts about each evaluated model, from its own README, model card and server source (headers of bench/models/<name>.sh). Used by bench/analysis/report.py for docs/models.md and the technical report.",
+ "laya": {
+  "display": "Laya (english)",
+  "developer": "Convai Innovations",
+  "family": "Encoder, option markers",
+  "base": "ModernBERT-large",
+  "readout": "one [MASK] marker per option",
+  "params": "421M",
+  "license": "Apache-2.0",
+  "url": "https://github.com/NandhaKishorM/laya"
+ },
+ "laya-typed": {
+  "display": "Laya (typed-decisions)",
+  "developer": "Convai Innovations",
+  "family": "Encoder, option markers",
+  "base": "ModernBERT-large",
+  "readout": "as Laya, fine-tuned on four workflows",
+  "params": "421M",
+  "license": "Apache-2.0",
+  "url": "https://github.com/NandhaKishorM/laya"
+ },
+ "von": {
+  "display": "Von 1.3",
+  "developer": "wfzyx",
+  "family": "Encoder, option markers",
+  "base": "ModernBERT-large",
+  "readout": "option-marker head; listwise CE + Brier, temperature map",
+  "params": "395M",
+  "license": "Apache-2.0",
+  "url": "https://github.com/wfzyx/von"
+ },
+ "verdict": {
+  "display": "Verdict 1.4",
+  "developer": "Heman10x",
+  "family": "Encoder, option markers",
+  "base": "ModernBERT-base",
+  "readout": "GLiClass bi-encoder head, RLCD/Brier calibration",
+  "params": "151M",
+  "license": "Apache-2.0",
+  "url": "https://github.com/Heman10x-NGU/Verdict-open-jev"
+ },
+ "jevhome-e": {
+  "display": "jevhome-E",
+  "developer": "Jibril Frej",
+  "family": "Encoder, bi-encoder",
+  "base": "granite-embedding-small-r2",
+  "readout": "bi-encoder distilled from a Qwen3.5-4B teacher",
+  "params": "48M",
+  "license": "CC-BY-NC-4.0",
+  "url": "https://github.com/Jibril-Frej/jev-at-home"
+ },
+ "jevhome-ettin-1b": {
+  "display": "jevhome-ettin-1b",
+  "developer": "Jibril Frej",
+  "family": "Encoder, cross-encoder",
+  "base": "Ettin-encoder-1B",
+  "readout": "cross-encoder distilled from a Qwen3.5-4B teacher",
+  "params": "1.0B",
+  "license": "CC-BY-NC-4.0",
+  "url": "https://github.com/Jibril-Frej/jev-at-home"
+ },
+ "decider-4b": {
+  "display": "decider-4b v2.1",
+  "developer": "Mapika",
+  "family": "Decoder, answer-letter logits",
+  "base": "Qwen3.5-4B-Base",
+  "readout": "full fine-tune + LoRA stage; option-letter logits, per-type temperatures",
+  "params": "4.2B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/Mapika/decider"
+ },
+ "decider-2b": {
+  "display": "decider-2b v10",
+  "developer": "Mapika",
+  "family": "Decoder, answer-letter logits",
+  "base": "Qwen3.5-2B-Base",
+  "readout": "fine-tune + calibration-aware RL; option-letter logits",
+  "params": "1.9B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/Mapika/decider"
+ },
+ "jevk5-4b": {
+  "display": "JevK5 v0.3",
+  "developer": "Alibi Serikbay",
+  "family": "Decoder, answer-letter logits",
+  "base": "Qwen3.5-4B",
+  "readout": "distilled LoRA (merged), option-letter logit readout",
+  "params": "4.2B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/allebee/jevk5"
+ },
+ "onejev-4b": {
+  "display": "OneJev-4B",
+  "developer": "OmniJev",
+  "family": "Decoder, answer-letter logits",
+  "base": "Qwen3.5-4B",
+  "readout": "full fine-tune (vision tower frozen); option-letter probability",
+  "params": "5.2B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/OmniJev/OneJev"
+ },
+ "jebadiah-9b": {
+  "display": "Jebadiah 9B v2",
+  "developer": "Frontier Infra",
+  "family": "Decoder, answer-letter logits",
+  "base": "Qwen3.5-9B",
+  "readout": "merged LoRA, per-type temperatures",
+  "params": "9.65B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/getainode/jebadiah"
+ },
+ "bespoke-nimble-9b": {
+  "display": "Bespoke-Nimble-9B",
+  "developer": "Bespoke Labs",
+  "family": "Decoder, answer-letter logits",
+  "base": "Qwen3.5-9B",
+  "readout": "LoRA scoring one-letter answer tokens; whole schema in every prompt",
+  "params": "9.7B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/bespokelabsai/nimble"
+ },
+ "jevany-qwen-4b-direct": {
+  "display": "JevAny-Qwen-4B (direct token)",
+  "developer": "SimpleJev",
+  "family": "Decoder, answer-letter logits",
+  "base": "Qwen3.5-4B",
+  "readout": "LoRA SFT, direct-token readout",
+  "params": "4B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/SimpleJev/JevAny"
+ },
+ "open-jev-9b": {
+  "display": "Open-Jev-9B",
+  "developer": "Zefan Cai",
+  "family": "Decoder, trained scorer head",
+  "base": "Qwen3.5-9B",
+  "readout": "rank-8 LoRA + scalar decision head; NLL + Brier",
+  "params": "9.7B",
+  "license": "weights Apache-2.0, code MIT",
+  "url": "https://github.com/Zefan-Cai/Open-Jev"
+ },
+ "rsi-jev-2b": {
+  "display": "RSI-Jev v3.0 2B",
+  "developer": "Shanghua Gao",
+  "family": "Decoder, trained scorer head",
+  "base": "Qwen3.5-2B-Base",
+  "readout": "trained readout/scorer head; SFT then RL, fitted calibration",
+  "params": "2.3B",
+  "license": "code MIT, weights Apache-2.0",
+  "url": "https://github.com/Shanghua-Gao/RSI-Jev"
+ },
+ "openthai-systemone": {
+  "display": "OpenThai-SystemOne",
+  "developer": "iApp Technology",
+  "family": "Decoder, trained scorer head",
+  "base": "Qwen3.5-0.8B-Base (Thai continued pre-training)",
+  "readout": "256-slot decision head; questions read as one causal sequence",
+  "params": "0.75B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/iapp-technology/openthai-systemone"
+ },
+ "kev-4b": {
+  "display": "Kev-4B",
+  "developer": "Jared Palmer",
+  "family": "Decoder, pointer head",
+  "base": "Qwen3.5-4B-Base",
+  "readout": "rank-16 LoRA + pointer head",
+  "params": "4.7B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/jaredpalmer/kev"
+ },
+ "tinyjev-4b": {
+  "display": "TinyJev-4B",
+  "developer": "AnkitAI",
+  "family": "Decoder, pointer head",
+  "base": "Qwen3-4B-Base",
+  "readout": "merged LoRA + pointer head (Kev recipe)",
+  "params": "4.0B",
+  "license": "MIT (base Apache-2.0)",
+  "url": "https://github.com/ankit-aglawe/tinyjev"
+ },
+ "jevany-qwen-4b": {
+  "display": "JevAny-Qwen-4B (pointer)",
+  "developer": "SimpleJev",
+  "family": "Decoder, pointer head",
+  "base": "Qwen3.5-4B",
+  "readout": "LoRA SFT, pointer readout",
+  "params": "4B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/SimpleJev/JevAny"
+ },
+ "jevany-gemma-4b": {
+  "display": "JevAny-Gemma-4B (pointer)",
+  "developer": "SimpleJev",
+  "family": "Decoder, pointer head",
+  "base": "Gemma-4-E4B-it",
+  "readout": "LoRA SFT, pointer readout",
+  "params": "E4B",
+  "license": "Apache-2.0",
+  "url": "https://github.com/SimpleJev/JevAny"
+ },
+ "clm": {
+  "display": "CLM v0.1",
+  "developer": "Contrastive-LM",
+  "family": "Contrastive embeddings",
+  "base": "Qwen3-8B (frozen)",
+  "readout": "projection heads over frozen embeddings",
+  "params": "8.2B + 20M",
+  "license": "Apache-2.0",
+  "url": "https://github.com/Contrastive-LM/CLM"
+ }
+}

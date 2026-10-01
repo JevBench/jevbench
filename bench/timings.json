@@ -1,0 +1,222 @@
+{
+ "_doc": "Each model's first evaluation: requests sent (cache hits excluded), wall seconds and replicas (one A100 40GB each; the jevhome models on CPU) for jevbench-mini and, where run, jevbench-240.",
+ "clm": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 82
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 400
+  }
+ },
+ "verdict": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 46
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 319
+  }
+ },
+ "laya": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 69
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 492
+  }
+ },
+ "laya-typed": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 70
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 491
+  }
+ },
+ "decider-2b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 242
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 1715
+  }
+ },
+ "kev-4b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 103
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 536
+  }
+ },
+ "rsi-jev-2b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 193
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 1382
+  }
+ },
+ "tinyjev-4b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 218
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 1536
+  }
+ },
+ "jevany-gemma-4b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 490
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 3570
+  }
+ },
+ "jevk5-4b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 438
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 3213
+  }
+ },
+ "decider-4b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1168,
+   "seconds": 486
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 3764
+  }
+ },
+ "jebadiah-9b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 535
+  },
+  "240": {
+   "requests": 9061,
+   "seconds": 3898
+  }
+ },
+ "jevany-qwen-4b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1228,
+   "seconds": 628
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 4672
+  }
+ },
+ "jevany-qwen-4b-direct": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 662
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 4819
+  }
+ },
+ "von": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 1483
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 10277
+  }
+ },
+ "openthai-systemone": {
+  "replicas": 2,
+  "mini": {
+   "requests": 699,
+   "seconds": 47
+  },
+  "240": {
+   "requests": 6292,
+   "seconds": 401
+  }
+ },
+ "jevhome-e": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 290
+  },
+  "240": {
+   "requests": 9072,
+   "seconds": 2111
+  }
+ },
+ "bespoke-nimble-9b": {
+  "replicas": 2,
+  "mini": {
+   "requests": 1248,
+   "seconds": 1635
+  },
+  "240": null
+ },
+ "jevhome-ettin-1b": {
+  "replicas": 2,
+  "mini": {
+   "requests": 1248,
+   "seconds": 3812
+  },
+  "240": null
+ },
+ "onejev-4b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 887,
+   "seconds": 411
+  },
+  "240": null
+ },
+ "open-jev-9b": {
+  "replicas": 1,
+  "mini": {
+   "requests": 1248,
+   "seconds": 5175
+  },
+  "240": null
+ }
+}

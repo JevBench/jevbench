@@ -1,0 +1,5 @@
+{
+  "_doc": "How each model was served, when not by its developers' own server. Models not listed: their own server (bench/models/<name>.sh).",
+  "bespoke-nimble-9b": "JevBench shim (Nimble's own Modal server does not run locally); same request mapping as Nimble's compiler.py, PyTorch reference runner, current checkpoint",
+  "verdict": "OpenJev server (razorback16/openjev), which reimplements Verdict 1.4's prompt and temperatures; Verdict ships no HTTP server"
+}

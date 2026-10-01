@@ -1,0 +1,3 @@
+include CHANGELOG.md CITATION.cff
+recursive-include tests *.py
+include archived/taxonomy.md

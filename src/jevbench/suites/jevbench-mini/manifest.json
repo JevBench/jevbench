@@ -1,0 +1,27 @@
+{
+ "name": "jevbench-mini",
+ "version": "1",
+ "base": "jevbench-240",
+ "per_domain": 2,
+ "description": "The 240 cases of jevbench-240, each relation tested on 2 cases per domain (24 tests per relation, 5 relations per case): about a ninth of the requests. The default suite, and the one results are reported on; every test is jevbench-240's own, and jevbench-240 runs all of them.",
+ "files": {
+  "tests.jsonl.gz": "0dce8edcf757a697865899731c2ea68ddaffeae553ceb0c7181008f08f961391"
+ },
+ "plan": {
+  "file": "tests.jsonl.gz",
+  "selection": "each relation on 2 cases per domain, one variant per test",
+  "trials": 1200,
+  "tests": 1200,
+  "relations": 50,
+  "seed": 0,
+  "trials_per_target": 1,
+  "drawn_from": "jevbench-240 v1",
+  "requests": 1248
+ },
+ "base_files": {
+  "cases.jsonl": "7725c67da08b335fd708621205b6444a9ac087b4ea1f76b745c5e5596fe226c5",
+  "rewrites.jsonl": "f19478f8d475dfdf6db5f78bd31c03ec7d33e0b62018e1ff92cd4646a769f833",
+  "tests.jsonl.gz": "9acc75335065f537a1ec2fa0caa9cdb7a9c3984741ebfd9a3ab184f73a86a377"
+ },
+ "built_with": "jevbench 0.1.0"
+}

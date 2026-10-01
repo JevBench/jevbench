@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use JevBench, please cite it as below."
+title: "JevBench: Metamorphic Coherence Testing for Typed Probabilistic Decision Models"
+type: software
+authors:
+  - family-names: Feng
+    given-names: Chen
+    affiliation: "ML Lab, Queen's University Belfast"
+    email: c.feng@qub.ac.uk
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/JevBench/jevbench"
+url: "https://jevbench.github.io"
+keywords:
+  - evaluation
+  - metamorphic testing
+  - coherence
+  - decision models

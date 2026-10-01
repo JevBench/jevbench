@@ -1,0 +1,48 @@
+{
+ "name": "jevbench-240",
+ "version": "1",
+ "description": "240 synthetic, fact-first cases: 12 decision domains x 20, generated and verified by JevBench datagen (writer gpt-oss-20b, verifier Llama-3.1-8B). The full benchmark; jevbench-mini, the default, is a ninth of its tests.",
+ "cases": 240,
+ "questions": 2240,
+ "domains": {
+  "customer_support": 20,
+  "content_moderation": 20,
+  "finance_ops": 20,
+  "security_ops": 20,
+  "it_incidents": 20,
+  "ecommerce_returns": 20,
+  "hr_recruiting": 20,
+  "healthcare_admin": 20,
+  "legal_contracts": 20,
+  "logistics": 20,
+  "education_grading": 20,
+  "agent_logs": 20
+ },
+ "files": {
+  "cases.jsonl": "7725c67da08b335fd708621205b6444a9ac087b4ea1f76b745c5e5596fe226c5",
+  "rewrites.jsonl": "f19478f8d475dfdf6db5f78bd31c03ec7d33e0b62018e1ff92cd4646a769f833",
+  "tests.jsonl.gz": "9acc75335065f537a1ec2fa0caa9cdb7a9c3984741ebfd9a3ab184f73a86a377"
+ },
+ "rewrites": {
+  "generator_and_judge": "openai/gpt-oss-20b (vLLM, reasoning_effort low)",
+  "kinds": [
+   "paraphrase",
+   "negation",
+   "description",
+   "translate:zh"
+  ],
+  "review": "every accepted rewrite re-checked by an AI reviewer (Claude, 2026-10-01): 823 kept, 345 set audited: false; not human-audited"
+ },
+ "built_with": "jevbench 0.1.0",
+ "plan": {
+  "file": "tests.jsonl.gz",
+  "selection": "each relation tested once per case, one variant per test",
+  "trials": 12000,
+  "tests": 12000,
+  "relations": 50,
+  "seed": 0,
+  "trials_per_target": 1,
+  "chosen_from_trials": 83964,
+  "requests": 10320
+ }
+}
