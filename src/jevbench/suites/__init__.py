@@ -15,9 +15,9 @@ same requests and draws no random numbers.
 
     jevbench-mini  the default, and the suite results are reported on: the 240 cases of jevbench-240,
                    each relation tested on 2 cases per domain (24 tests per relation, 5 relations per
-                   case), about a ninth of the requests; every test is jevbench-240's own. On 17
-                   models its overall scores agree with jevbench-240's (Spearman 0.98, at most 2.2
-                   points apart), with intervals about 2.5 times as wide
+                   case), about a ninth of the requests; every test is jevbench-240's own. On all
+                   21 models its overall scores agree with jevbench-240's (Spearman 0.98, at most
+                   2.2 points apart), with intervals about 2.5 times as wide
     jevbench-240   the full benchmark: 240 cases in 12 domains, 240 tests per relation; optional,
                    for narrower intervals and per-domain analysis
     examples       one hand-written case, to check in seconds that the tool works with

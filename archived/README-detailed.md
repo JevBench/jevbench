@@ -100,11 +100,12 @@ jevbench report runs/open-jev.json runs/other.json      # compare saved reports
 - **Which suite to report.** Results are reported on `jevbench-mini`, the
   default: the 240 cases of jevbench-240, each relation tested on 2 cases
   per domain (24 tests per relation), a ninth of the requests. Every one of
-  its tests is a jevbench-240 test. On the 17 models we ran on both, the
-  overall scores agree (Pearson 0.993, Spearman 0.978, mini minus 240 at most
-  2.2 points, ranks moved by at most 2), and every pair of models that
-  jevbench-240 separates (95% intervals apart) is ordered the same way by
-  jevbench-mini. Its intervals are about 2.5 times as wide (4.4 against 1.7
+  its tests is a jevbench-240 test. On all 21 models, which we ran on both,
+  the overall scores agree (Pearson 0.992, Spearman 0.983, mini minus 240 at
+  most 2.2 points, ranks moved by at most 2), and 186 of the 187 pairs of
+  models that jevbench-240 separates (95% intervals apart) are ordered the
+  same way by jevbench-mini; the exception, jevhome-ettin-1b and
+  OpenThai-SystemOne, is 0.1 points apart on jevbench-mini. Its intervals are about 2.5 times as wide (4.4 against 1.7
   points), so read differences of a few points between models as ties, or
   run `suite="jevbench-240"` (optional) to separate them. Even on
   jevbench-240 a model's domain scores differ from its overall score by about

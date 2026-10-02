@@ -1,5 +1,5 @@
 {
- "_doc": "Each model's first evaluation: requests sent (cache hits excluded), wall seconds and replicas (one A100 40GB each; the jevhome models on CPU) for jevbench-mini and, where run, jevbench-240.",
+ "_doc": "Each model's first evaluation: requests sent (cache hits excluded), wall seconds and replicas (one A100 40GB each; the jevhome models on CPU) for jevbench-mini and, where run, jevbench-240. A \"replicas\" inside a suite's entry overrides the model's for that suite. onejev-4b's JevBench-240 timing covers its first attempt up to a server failure, after which the run was resumed from the request cache; jevhome-ettin-1b ran JevBench-240 on a CPU node (3 replicas of 12 threads).",
  "clm": {
   "replicas": 1,
   "mini": {
@@ -193,7 +193,10 @@
    "requests": 1248,
    "seconds": 1635
   },
-  "240": null
+  "240": {
+   "requests": 1184,
+   "seconds": 1378
+  }
  },
  "jevhome-ettin-1b": {
   "replicas": 2,
@@ -201,7 +204,11 @@
    "requests": 1248,
    "seconds": 3812
   },
-  "240": null
+  "240": {
+   "requests": 7227,
+   "seconds": 21265,
+   "replicas": 3
+  }
  },
  "onejev-4b": {
   "replicas": 1,
@@ -209,7 +216,10 @@
    "requests": 887,
    "seconds": 411
   },
-  "240": null
+  "240": {
+   "requests": 4096,
+   "seconds": 1577
+  }
  },
  "open-jev-9b": {
   "replicas": 1,
@@ -217,6 +227,10 @@
    "requests": 1248,
    "seconds": 5175
   },
-  "240": null
+  "240": {
+   "requests": 9072,
+   "seconds": 20382,
+   "replicas": 2
+  }
  }
 }
