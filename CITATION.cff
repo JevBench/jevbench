@@ -12,7 +12,29 @@ license: Apache-2.0
 repository-code: "https://github.com/JevBench/jevbench"
 url: "https://jevbench.github.io"
 keywords:
-  - evaluation
+  - "Computation and Language (cs.CL)"
+  - "Machine Learning (cs.LG)"
+  - benchmarking
   - metamorphic testing
-  - coherence
-  - decision models
+  - probabilistic coherence
+  - typed decision models
+  - consistency evaluation
+  - calibration
+preferred-citation:
+  type: generic
+  title: "JevBench: Metamorphic Coherence Testing for Typed Probabilistic Decision Models"
+  authors:
+    - family-names: Feng
+      given-names: Chen
+      affiliation: "ML Lab, Queen's University Belfast"
+  year: 2026
+  url: "https://jevbench.github.io"
+  keywords:
+    - "Computation and Language (cs.CL)"
+    - "Machine Learning (cs.LG)"
+    - benchmarking
+    - metamorphic testing
+    - probabilistic coherence
+    - typed decision models
+    - consistency evaluation
+    - calibration
