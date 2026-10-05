@@ -16,6 +16,7 @@
   <a href="https://github.com/JevBench/jevbench/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-16213A" alt="License"></a>
   <a href="https://jevbench.github.io"><img src="https://img.shields.io/badge/leaderboard-jevbench.github.io-E8603F" alt="Leaderboard"></a>
   <a href="https://www.alphaxiv.org/abs/2610.jevbench-metamorphic-coherence-testing"><img src="https://img.shields.io/badge/technical%20report-alphaXiv-E8603F" alt="Technical report"></a>
+  <a href="https://huggingface.co/datasets/JevBench/jevbench"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20dataset-JevBench%2Fjevbench-E8603F" alt="Hugging Face dataset"></a>
 </p>
 
 ---
@@ -200,6 +201,7 @@ they affect are left unscored rather than scored on fewer tests.
 |---|---|
 | [Technical report](https://www.alphaxiv.org/abs/2610.jevbench-metamorphic-coherence-testing) | the method, the 50 relations, the data and all results |
 | [Leaderboard](https://jevbench.github.io) | every model's scores, profiles and full report |
+| [Hugging Face dataset](https://huggingface.co/datasets/JevBench/jevbench) | the cases, gold answers, frozen suites and every evaluation report, loadable with `datasets` |
 | [docs/reproducing.md](https://github.com/JevBench/jevbench/blob/main/docs/reproducing.md) | recompute every score from the published reports, or rerun any model |
 | [docs/datagen.md](https://github.com/JevBench/jevbench/blob/main/docs/datagen.md) | how the cases and the rewrite bank were generated |
 | [archived/taxonomy.md](https://github.com/JevBench/jevbench/blob/main/archived/taxonomy.md) | the full relation taxonomy, generated from the code |
