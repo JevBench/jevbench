@@ -1,4 +1,4 @@
-> **Archived.** The detailed README of JevBench 0.1.0, kept for reference: concepts, the case format, how a run works, how scores are computed, templates and rewrites, scope and limits. The current, shorter README is [here](../README.md); the method and results are in the [technical report](https://jevbench.github.io/report/JevBench-technical-report.pdf).
+> **Archived.** The detailed README of JevBench 0.1.0, kept for reference: concepts, the case format, how a run works, how scores are computed, templates and rewrites, scope and limits. The current, shorter README is [here](../README.md); the method and results are in the [technical report](https://www.alphaxiv.org/abs/2610.jevbench-metamorphic-coherence-testing).
 
 # JevBench
 
@@ -416,7 +416,7 @@ are diagnostics: outside the dimensions, never scored, and run only with
 Membership follows the operation, not the data. The mathematical
 definitions, the full list of laws and the reasons further candidate laws are
 not relations are in the
-[technical report](https://jevbench.github.io/report/JevBench-technical-report.pdf).
+[technical report](https://www.alphaxiv.org/abs/2610.jevbench-metamorphic-coherence-testing).
 
 | Dimension | Title | Compares | Operation | Relations |
 |---|---|---|---|---|

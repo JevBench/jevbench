@@ -15,7 +15,7 @@
   <a href="https://github.com/JevBench/jevbench/actions/workflows/tests.yml"><img src="https://github.com/JevBench/jevbench/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
   <a href="https://github.com/JevBench/jevbench/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-16213A" alt="License"></a>
   <a href="https://jevbench.github.io"><img src="https://img.shields.io/badge/leaderboard-jevbench.github.io-E8603F" alt="Leaderboard"></a>
-  <a href="https://jevbench.github.io/report/JevBench-technical-report.pdf"><img src="https://img.shields.io/badge/technical%20report-PDF-E8603F" alt="Technical report"></a>
+  <a href="https://www.alphaxiv.org/abs/2610.jevbench-metamorphic-coherence-testing"><img src="https://img.shields.io/badge/technical%20report-alphaXiv-E8603F" alt="Technical report"></a>
 </p>
 
 ---
@@ -198,7 +198,7 @@ they affect are left unscored rather than scored on fewer tests.
 
 | | |
 |---|---|
-| [Technical report](https://jevbench.github.io/report/JevBench-technical-report.pdf) | the method, the 50 relations, the data and all results |
+| [Technical report](https://www.alphaxiv.org/abs/2610.jevbench-metamorphic-coherence-testing) | the method, the 50 relations, the data and all results |
 | [Leaderboard](https://jevbench.github.io) | every model's scores, profiles and full report |
 | [docs/reproducing.md](https://github.com/JevBench/jevbench/blob/main/docs/reproducing.md) | recompute every score from the published reports, or rerun any model |
 | [docs/datagen.md](https://github.com/JevBench/jevbench/blob/main/docs/datagen.md) | how the cases and the rewrite bank were generated |
@@ -209,11 +209,12 @@ they affect are left unscored rather than scored on fewer tests.
 
 ```bibtex
 @misc{feng2026jevbench,
-  title        = {JevBench: Metamorphic Coherence Testing for Typed Probabilistic Decision Models},
+  title        = {{JevBench}: Metamorphic Coherence Testing for Typed Probabilistic Decision Models},
   author       = {Feng, Chen},
   year         = {2026},
-  howpublished = {\url{https://jevbench.github.io}},
-  note         = {Technical report. ML Lab, Queen's University Belfast}
+  howpublished = {\url{https://www.alphaxiv.org/abs/2610.jevbench-metamorphic-coherence-testing}},
+  note         = {Technical report, ML Lab, Queen's University Belfast},
+  keywords     = {Computation and Language (cs.CL), Machine Learning (cs.LG), Benchmarking, Metamorphic Testing, Probabilistic Coherence, Typed Decision Models, Consistency Evaluation, Calibration}
 }
 ```
 
